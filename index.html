@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+</head>
+<body>
+    <main>
+        <div class="inputs">
+            <div class="input">
+                <label id="dayLabel" class="normal" for="day">DAY</label>
+                <input type="number" name="day" id="day" min="1" maxlength="2" max="31" placeholder="DD">
+                <h4 id="errorDay"  class="error hide">This is Empty</h4>
+            </div>
+            <div class="input">
+                <label id="monthLabel" class="normal" for="month">MONTH</label>
+                <input type="number" name="month" min="1" id="month" maxlength="2" max="12" placeholder="MM">
+                <h4  id="errorMonth" class="error hide">This is Empty</h4>
+            </div>
+            <div class="input">
+                <label id="yearLabel" class="normal" for="year">YEAR</label>
+                <input type="number" name="year" id="year" min="1800" minlength="4" maxlength="4"  placeholder="YYYY">
+                <h4 id="errorYear" class="error hide">This is Empty</h4>
+
+            </div>
+            
+        </div>
+        <div class="button">
+            <hr/>
+            <button id="BtnDisplay"><img src="./assets/images/icon-arrow.svg" alt=""></button>
+        </div>
+        <div id="display">
+            <h3 id="yearsDisplay"><span>--</span>years</h3>
+                <h3 id="monthsyearsDisplay"><span>--</span>months</h3>
+                <h3 id="daysDisplay"><span>--</span>days</h3>
+        </div>
+    </main>
+    <script src="./index.js"></script>
+
+</body>
+</html>
